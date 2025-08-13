@@ -4,7 +4,7 @@ import "./css/Style.css";
 const Tempapp = () => {
   const [city, setCity] = useState(null);
   const [search, setSearch] = useState("pune");
-
+  const api = 'YOUR_API'
   useEffect(() => {
     const fetchApi = async () => {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${api)`;
